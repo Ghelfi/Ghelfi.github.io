@@ -31,5 +31,3 @@ The different pages are star-coded to provide a quick understanding of the techn
 ## Sections (coming soon)
 
 ---
-
-*From crunching huge datasets in astroparticle physics to building AI models at the research frontier, I’ve found my sweet spot in ML engineering — digging into GPU computation to help make models run faster, smarter, and more efficiently.*

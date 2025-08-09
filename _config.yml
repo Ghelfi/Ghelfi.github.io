@@ -1,0 +1,148 @@
+minimal_mistakes_skin: "default"
+
+# Site Settings
+locale: "en-US"
+title: "Under the Tensor"
+title_separator: "-"
+name: "Alexandre Ghelfi"
+description: "Deep technical explorations of machine learning internals — from GPU kernels to model compilation and much more."
+url: "https://ghelfi.github.io"
+baseurl: "" # empty since it's at the root of the domain
+repository: "Ghelfi/ghelfi.github.io"
+words_per_minute: 200
+
+# Comments
+comments:
+  provider: false
+
+# Atom feed
+atom_feed:
+  path: 
+
+# Search
+search: true
+search_full_content: false
+search_provider: lunr
+
+# Social Sharing
+social:
+  type: Person
+  name: "Alexandre Ghelfi"
+  links:
+    - "https://github.com/Ghelfi"
+
+# Site Author
+author:
+  name: "Alexandre Ghelfi"
+  avatar:
+  bio: "From working with huge datasets in astroparticle physics to developing AI capabilities at the frontier of research, I've found my place in ML engineering — digging into GPU computation to help make models run faster, smarter, and more efficiently."
+  location: "Paris, France"
+  email: "alexandreghelfi@gmail.com"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:alexandreghelfi@gmail.com"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/Ghelfi"
+
+# Site Footer
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/Ghelfi"
+  since: "2025"
+
+# Reading Files
+include:
+  - .htaccess
+  - _pages
+exclude:
+  - vendor
+  - node_modules
+  - tmp
+keep_files:
+  - .git
+  - .svn
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+excerpt_separator: "\n\n"
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Outputting
+permalink: /:categories/:title/
+timezone:
+
+# Pagination
+paginate: 5
+paginate_path: /page:num/
+
+pagination:
+  debug: false
+  collection: 'posts'
+  per_page: 10
+  permalink: '/page/:num/'
+  title: ':title - page :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+  category: 'posts'
+  tag: ''
+  locale: ''
+  trail:
+    before: 2
+    after: 2
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+
+# Archives
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+
+# HTML Compression
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      share: true
+      related: true

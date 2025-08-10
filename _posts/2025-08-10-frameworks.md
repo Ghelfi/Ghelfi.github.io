@@ -5,6 +5,6 @@ category: pytorch_internals
 author_profile: false
 sidebar: true
 ---
-Level: ⭐
+Star Ranking: ⭐
 
 Under construction

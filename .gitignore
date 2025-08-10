@@ -1,0 +1,5 @@
+.venv/
+_site/
+Gemfile.lock
+.sass-cache/
+.jekyll-cache/

@@ -1,0 +1,29 @@
+{% comment %}
+Define your preferred category order here
+The keys must match the `categories:` in your post front matter exactly
+{% endcomment %}
+{% assign category_order = "pytorch_internals," | split: "," %}
+
+<nav class="category-nav">
+  <ul class="category-list">
+    {% for cat in category_order %}
+      {% assign posts_in_cat = site.categories[cat] | sort: "date" | reverse %}
+      {% if posts_in_cat and posts_in_cat.size > 0 %}
+        <li class="category-item">
+          <details>
+            <summary>{{ cat | replace: "_", " " | capitalize }}</summary>
+            <ul class="post-list">
+              {% for post in posts_in_cat %}
+                <li>
+                  <a href="{{ post.url | relative_url }}">
+                    {{ post.title }}
+                  </a>
+                </li>
+              {% endfor %}
+            </ul>
+          </details>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</nav>

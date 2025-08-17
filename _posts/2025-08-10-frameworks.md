@@ -17,14 +17,14 @@ others.
 So..., why `PyTorch`? If I had written this blog ten years ago, would I have chosen differently?
 Putting aside the minor temporal hiccup that `PyTorch` `v0.1.1` was released in April 2016, let’s
 focus on the real question here: How have different deep learning frameworks performed in terms of
-community adoption, and what factors have shaped the development and adoption dynamics over the past
-decade?
+community adoption, and what factors have shaped the development and adoption dynamics over the last
+(and ironically, due to publish timing, also the first) ten years?
 
-# The Framework race
+# The Framework Race
 
-Over the past decade, the deep learning framework landscape has shifted dramatically — starting with
-early pioneers like `Theano` and `Caffe`, which powered research breakthroughs in computer vision;
-moving on to the first giants such as `TensorFlow`, and arriving at today’s dominant
+Over the past decade, the deep learning framework landscape has shifted significantly — starting
+with early pioneers like `Theano` and `Caffe`, which powered research breakthroughs in computer
+vision; moving on to the first giants such as `TensorFlow`, and arriving at today’s dominant
 community-driven contender, `PyTorch`.
 
 Tracking the community adoption and impact of a deep learning framework is a challenge in
@@ -48,10 +48,11 @@ We can clearly identify three distinct eras:
   the dominant framework. Paddle remains popular, particularly in Asia, but the overall landscape is
   largely shaped by `PyTorch`.
 
-What could have triggered these shifts between eras? <br> The explosive rise of performance in
-computer vision — and later in NLP — pushed large companies to develop their own frameworks to gain
-a competitive edge, streamline internal projects, and accelerate research. This helps explain the
-transition from the Precursor Era to the Framework War.
+What could have triggered these shifts between eras?
+
+The explosive rise of performance in computer vision — and later in NLP — pushed large companies to
+develop their own frameworks to gain a competitive edge, streamline internal projects, and
+accelerate research. This helps explain the transition from the Precursor Era to the Framework War.
 
 The second transition is less obvious. `TensorFlow` had an early advantage, offering a complete
 solution from research to deployment, covering everything from large servers up to embedded devices
@@ -156,22 +157,9 @@ new architectures and training techniques much more efficiently than ever before
 ## ONNX: Decoupling Training from Inference
 
 The second breakthrough came in 2017 with the introduction of the ONNX format, a common standard for
-representing neural networks. Before ONNX, frameworks formed silos: models trained in one framework
-were locked into its ecosystem for deployment. <br> ONNX broke down these walls by providing a
-portable, framework-agnostic representation of models. <br> This allowed researchers to:
-
-- Train models in PyTorch for maximum flexibility.
-- Export them to ONNX.
-- Deploy them on optimized inference engines (ONNX Runtime, TensorRT, OpenVINO, etc.).
-
-It also helped speed up the development of specific inference hardware since the standards brought
-by ONNX allowed to support on input format.
-
-The second breakthrough came in 2017 with the introduction of the ONNX format, a common standard for
 representing neural networks. Before ONNX, frameworks were mostly siloed: models trained in one
-framework were effectively locked into its ecosystem for deployment.<br> ONNX broke down these walls
-by providing a portable, framework-agnostic representation of models.<br> This enabled researchers
-to:
+framework were effectively locked into its ecosystem for deployment. ONNX broke down these walls by
+providing a portable, framework-agnostic representation of models.<br> This enabled researchers to:
 
 - Train models in PyTorch (or another framework) for maximum flexibility.
 - Export them to ONNX.
@@ -183,10 +171,11 @@ reducing friction and improving performance across the ecosystem.
 
 # So... PyTorch
 
-`PyTorch`’s early leap into eager execution and the ONNX release gave it massive momentum —
-something `TensorFlow` 2.0 (which finally enabled eager execution) couldn’t fully reverse. In the
-end, picking `PyTorch` for this blog feels not just natural, but objectively the best choice today.
-Ten years ago, you’d have read me grumbling about building graphs from protobuf definitions…
+`PyTorch`’s early leap into eager execution gave it massive momentum — something `TensorFlow` 2.0
+(which finally enabled eager execution) couldn’t fully reverse. ONNX release and adoption also
+reduced the impact of the all-in-one solution proposed by `TensorFlow`. In the end, picking
+`PyTorch` for this blog feels not just natural, but objectively the best choice today. Ten years
+ago, you’d have read me grumbling about building graphs from protobuf definitions…
 
 One might wonder if moving from a full pre-defined graph to eager execution could hurt compute
 speed, especially on GPUs. Back then, GPUs and CUDA kernels weren’t as performant as today, but the

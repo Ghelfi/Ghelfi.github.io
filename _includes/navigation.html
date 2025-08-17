@@ -7,7 +7,7 @@ The keys must match the `categories:` in your post front matter exactly
 <nav class="category-nav">
   <ul class="category-list">
     {% for cat in category_order %}
-      {% assign posts_in_cat = site.categories[cat] | sort: "date" | reverse %}
+      {% assign posts_in_cat = site.categories[cat] | sort: "date" %}
       {% if posts_in_cat and posts_in_cat.size > 0 %}
         <li class="category-item">
           <details>

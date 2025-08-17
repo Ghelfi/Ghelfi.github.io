@@ -16,8 +16,9 @@ others.
 
 So..., why `PyTorch`? If I had written this blog ten years ago, would I have chosen differently?
 Putting aside the minor temporal hiccup that `PyTorch` `v0.1.1` was released in April 2016, let’s
-focus on the real question here: What drove the dynamics of development and adoption of deep
-learning frameworks over the last decade?
+focus on the real question here: How have different deep learning frameworks performed in terms of
+community adoption, and what factors have shaped the development and adoption dynamics over the past
+decade?
 
 # The Framework race
 

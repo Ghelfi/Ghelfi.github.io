@@ -18,3 +18,27 @@ search: false
   width: 32px;   /* or 48px depending on your design */
   height: auto;  /* keep aspect ratio */
 }
+
+#main {
+  display: flex;
+  gap: 30px; /* spacing between sidebar and content */
+}
+
+/* Sidebar: fixed width */
+.sidebar {
+  flex: 0 0 200px; /* don’t shrink, fixed ~280px */
+}
+
+/* Content area: take remaining space */
+.archive,
+.post-content,
+.page__content {
+  flex: 1;              /* grow into available space */
+  max-width: none;      /* remove narrow max-width */
+  width: auto;          /* let flexbox decide */
+}
+
+body {
+    font-size: 0.9em; /* 90% of the default size */
+    line-height: 1.5; /* adjust for readability */
+}

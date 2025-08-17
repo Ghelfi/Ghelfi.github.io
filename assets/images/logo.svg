@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="-128 -128 256 256">
+  <defs>
+    <g id="cube">
+      <polygon points="0,-36 36,-18 0,0 -36,-18" fill="#16a34a"/>
+      <polygon points="0,0 36,-18 36,18 0,36" fill="#065f46"/>
+      <polygon points="0,0 -36,-18 -36,18 0,36" fill="#34d399"/>
+      <polygon points="0,-36 36,-18 36,18 0,36 -36,18 -36,-18 0,-36" 
+               fill="none" stroke="black" stroke-opacity="0.2" stroke-width="1"/>
+    </g>
+  </defs>
+
+  <use href="#cube" transform="translate(10,0)"/>
+  <use href="#cube" transform="translate(50,20)"/>
+  <use href="#cube" transform="translate(90,40)"/>
+  <use href="#cube" transform="translate(10,-40)"/>
+  <use href="#cube" transform="translate(50,-20)"/>
+  <use href="#cube" transform="translate(90,0)"/>
+  <use href="#cube" transform="translate(10,-80)"/>
+  <use href="#cube" transform="translate(50,-60)"/>
+  <use href="#cube" transform="translate(90,-40)"/>
+  <use href="#cube" transform="translate(-30,20)"/>
+  <use href="#cube" transform="translate(10,40)"/>
+  <use href="#cube" transform="translate(50,60)"/>
+  <use href="#cube" transform="translate(-30,-20)"/>
+  <use href="#cube" transform="translate(10,0)"/>
+  <use href="#cube" transform="translate(50,20)"/>
+  <use href="#cube" transform="translate(-30,-60)"/>
+  <use href="#cube" transform="translate(10,-40)"/>
+  <use href="#cube" transform="translate(50,-20)"/>
+  <use href="#cube" transform="translate(-70,40)"/>
+  <use href="#cube" transform="translate(-30,60)"/>
+  <use href="#cube" transform="translate(10,80)"/>
+  <use href="#cube" transform="translate(-70,0)"/>
+  <use href="#cube" transform="translate(-30,20)"/>
+  <use href="#cube" transform="translate(10,40)"/>
+  <use href="#cube" transform="translate(-70,-40)"/>
+  <use href="#cube" transform="translate(-30,-20)"/>
+  <use href="#cube" transform="translate(10,0)"/>
+</svg>

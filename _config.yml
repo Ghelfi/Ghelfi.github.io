@@ -2,7 +2,7 @@ minimal_mistakes_skin: "default"
 
 # Site Settings
 locale: "en-US"
-title: "Under the Tensor"
+title: "Under the Tensors"
 title_separator: "-"
 name: "Alexandre Ghelfi"
 description: "Deep technical explorations of machine learning internals — from GPU kernels to model compilation and much more."

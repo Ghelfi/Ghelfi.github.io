@@ -111,7 +111,7 @@ def body(i: tf.Tensor, val: tf.Tensor, logs: tf.TensorArray):
     logs = logs.write(i, new_val)
     return i + 1, new_val, logs
 
-# The stoping condition of the fot loop
+# The stopping condition of the for loop
 def cond(i: tf.Tensor, val: tf.Tensor, logs: tf.TensorArray):
     return i < 5
 
